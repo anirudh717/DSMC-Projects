@@ -1,5 +1,5 @@
 # ==============================================================================================================================
-#                                   Analytical Riemann Problem Solution for 1D Euler Equations
+#                                    Analytical Riemann Solution for Sod Shock Tube Problem (1D Euler equations)
 #-------------------------------------------------------------------------------------------------------------------------------
 #                                                                                                 -By: Anirudh Renganathan, 2025
 # ==============================================================================================================================
@@ -41,7 +41,7 @@ u4=0
 t = 3.43763e-10
 # =========================
 
-# Riemann Problem Solution
+# Riemann Problem - Solution
 def u3(P):
  A=(2*a4/(gamma-1))*(1-(P/P4)**((gamma-1)/(2*gamma)))
  return A
@@ -89,9 +89,6 @@ T   = np.zeros_like(x)
 a   = np.zeros_like(x)
 
 xi = (x - x0) / t
-
-# Wave speeds
-S_tail = uc - a3
 
 # Masks
 mask_4 = xi < S_head
@@ -215,16 +212,13 @@ T_max = np.max(np.abs(T))
 axs[3].plot(x_nd, T, 'r', linewidth=2)
 style(axs[3],ylabel="Temperature (K)",ylim=(0.2*T_max, 1.22*T_max),labelpad=18)  
 
-# ============================
-# Set custom x-axis ticks (0.0, 0.1, 0.2, ...)
-# ============================
 x_ticks = np.arange(0, 1.1, 0.1)  # 0.0 to 1.0 in steps of 0.1
 for ax in axs:
     ax.set_xticks(x_ticks)
     ax.tick_params(axis='x', which='both', labelbottom=True)
 
 # ============================
-# ID wave locations
+# wave locations
 # ============================
 x_head  = (x0 + S_head * t) / L
 x_tail  = (x0 + (uc - a3) * t) / L
