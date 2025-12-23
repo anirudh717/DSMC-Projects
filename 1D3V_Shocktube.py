@@ -10,8 +10,8 @@
 #                                                                                                   YEAR: 2025
 # ============================================================================================================
 
-# Note: Pls read the README section below and make sure to uncomment sections as needed for plotting
-
+# Note: Pls read the READ ME section below and make sure to uncomment lines in the code as needed for visualization
+# or saving plot files
 #------------------------------------------------------------------------------------------------------
 #======================================================================================================
 # READ ME :-)
@@ -782,7 +782,7 @@ if plot_solution_for_animation:
     codec='libx264',
     extra_args=['-pix_fmt', 'yuv420p']
     )
-    ani.save("bulk_velocity_fast_evolution.mp4", writer=writer, dpi=300)
+    #ani.save("bulk_velocity_fast_evolution.mp4", writer=writer, dpi=300)
 
    
     print("saved")
