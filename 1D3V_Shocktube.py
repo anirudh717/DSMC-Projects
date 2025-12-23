@@ -867,11 +867,12 @@ rho_head_region = np.mean(rho_final[head_region_indices])
 P_head_region = np.mean(P_final[head_region_indices])
 
 # Calculate speed of sound in head region of Expansion Fan
-a_head_region = np.sqrt(gamma * P_head_region / rho_head_region)  
+a_head_region = np.sqrt(gamma * P_head_region / rho_head_region) 
+u_head_region = np.mean(u_mean_final[head_region_indices])  
 
 #calculate head-wave speed and tail-wave speed for the Expansion Fan
-head_wave_speed = a_head_region
-tail_wave_speed = a_post - u_mean_post
+head_wave_speed = u_head_region-a_head_region
+tail_wave_speed = u_mean_post-a_post 
 
 #calculate expansion fan thickness
 expansion_fan_thickness = 0.45*L
