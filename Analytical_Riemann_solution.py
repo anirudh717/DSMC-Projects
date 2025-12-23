@@ -54,6 +54,7 @@ def contact_pressure_eqn(Pc):
  return u3(Pc) - u2(Pc)
 
 Pc_guess = 0.5 * (P1 + P4) # Pls note: Most crucial line - everything calculated further is dependent on this guess
+# Pc_guess=np.sqrt(P1*P4)  #Alternate
 
 Pc = fsolve(contact_pressure_eqn, Pc_guess)[0]
 uc = u3(Pc)
