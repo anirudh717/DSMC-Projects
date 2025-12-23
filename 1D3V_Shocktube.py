@@ -5,8 +5,7 @@
 #                 1D3V SHOCK-TUBE SIMULATION : A DSMC ANALOGUE TO THE SOD SHOCK-TUBE RIEMANN PROBLEM
 #-------------------------------------------------------------------------------------------------------------
 #                                                                                      By: Anirudh Renganathan
-#                                                                       School of Aeronautics and Astronautics
-#                                                                                            PURDUE University
+#                                                    School of Aeronautics and Astronautics, PURDUE University                                                                                            
 #                                                                         Project Advisor: Dr. Alina Alexeenko
 #                                                                                                   YEAR: 2025
 # ============================================================================================================
