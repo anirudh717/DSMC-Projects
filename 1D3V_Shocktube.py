@@ -18,7 +18,7 @@
 #======================================================================================================
 # This code simulates a 1-D 3-V shocktube problem using the Direct Simulation Monte Carlo (DSMC) method.
 # Simulation is 1D in physical space and 3D in velocity space (1D3V)
-# The Code has been adapted from Dr. Alejandro Garcia's DSMC-equilibrium MATLAB code ("dsmceq.m").
+# The Code has been adapted from Dr. Alejandro Garcia's DSMC-equilibrium MATLAB code (cited in README.md).
 # MONTE CARLO METHODOLOGY : Probability-based ACCEPTANCE-REJECTION based on relative velocities
 # SORTER function sorts particles into cells based on their positions in the shocktube domain
 # COLIDER function redistributes kinetic energies and the particles have all 3 components of velocity
