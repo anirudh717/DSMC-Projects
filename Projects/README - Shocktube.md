@@ -10,6 +10,9 @@ The solution is high-fidelity, which can be confirmed  by comparison with the An
 
 
 
+Comparison of Mean Velocity Profile - DSMC vs Analytical Solution
+
+
 <img width="4500" height="1800" alt="5) DSMC-velocity profile" src="https://github.com/user-attachments/assets/52b7d069-a61b-4546-9ebe-bca311e67247" />
 
 
