@@ -10,6 +10,10 @@ The solution is high-fidelity, which can be confirmed  by comparison with the An
 
 
 
+<img width="4500" height="1800" alt="5) DSMC-velocity profile" src="https://github.com/user-attachments/assets/52b7d069-a61b-4546-9ebe-bca311e67247" />
+
+
+<img width="1498" height="747" alt="6) Analytical Riemann -Velocity profile" src="https://github.com/user-attachments/assets/98781e7a-f6fe-4678-bbde-6d5096be961b" />
 
 
 
